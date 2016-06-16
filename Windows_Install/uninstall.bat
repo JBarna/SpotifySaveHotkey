@@ -1,10 +1,10 @@
 @echo off
 set baseDir=%localappdata%\SpotifySaveHotkey
 set nodePath=%baseDir%\node
-set startPath=%baseDir%\start.js
+set entryPath=%baseDir%\entry.js
 
 
-start /MIN /WAIT "" "%nodePath%" "%startPath%" uninstall
+start /MIN /WAIT "" "%nodePath%" "%entryPath%" uninstall
 
 if exist "%appdata%\Microsoft\Windows\Start Menu\Programs\SpotifySaveHotkey" (
 
