@@ -82,7 +82,7 @@ function checkForNewRelease( repoName, next ){
                     
                 // temporariliy load the old hotkey file (which will be overwritten )
                 if (process.argv[2] !== "install")
-                    var hotkey = fs.readFileSync( path.join(__dirname, "SpotifySaveHotkey", "hotkey.txt"));
+                    var hotkey = fs.readFileSync( path.join(__dirname, "SpotifySaveHotkey", "hotkey.txt"), 'utf8');
                 
                 
                 // delete the previous release
@@ -103,10 +103,8 @@ function checkForNewRelease( repoName, next ){
 
                     
                     // put the hotkey file back
-                    if (process.argv[2] !== "install"){
-                        fs.unlinkSync( path.join(__dirname, "SpotifySaveHotkey", "hotkey.txt") );
-                        fs.createWriteStream( path.join(__dirname, "SpotifySaveHotkey", "hotkey.txt") ).end( hotkey );
-                    }
+                    if (process.argv[2] !== "install")
+                        fs.writeFileSync( path.join(__dirname, "SpotifySaveHotkey", "hotkey.txt"), hotkey );
                     
                     next();
                 });
