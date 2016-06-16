@@ -4,14 +4,15 @@ var spawn = require('child_process').spawn,
     updater = require('./dlapp');
 
 
+// the processes running off the bat
+killOldProcesses();
+
 // So originally I wanted to store the PIDs in a simple text file
 // so we could kill them from the command line... well for some reason
 // thanks to windows I can't kill them from BATCH because the file
 // doesn't update or something in the file system... probaly an os
 // issue with caching.
 if (process.argv[2] === "uninstall"){
-    
-    killOldProcesses();
     
     // remove the process from startup
     require('./SpotifySaveHotkey/lib/startup_manager').setState(false);
@@ -23,8 +24,6 @@ if (process.argv[2] === "uninstall"){
 updater( () => {
 
     var pidsPath = path.join( __dirname, "pids");
-    
-    killOldProcesses();
     
     // start the main application as a detatched process...  
     // this is the only way I could get it running silently in the

@@ -67,12 +67,16 @@ public class Connection implements Runnable{
 
             String first = in.nextLine();
 
-            if (first.equalsIgnoreCase("hotkey")){
+            if (first.equalsIgnoreCase("hotkey")) {
 
                 String hotkey = in.nextLine();
-                Hotkey.getInstance().setKeyStroke( hotkey );
+                Hotkey.getInstance().setKeyStroke(hotkey);
                 Hotkey.getInstance().startListening();
 
+
+            } else if (first.equalsIgnoreCase("play_alert")){
+
+                AudioAlert.getInstance().playAlert();
 
             } else if (first.equalsIgnoreCase("config")){
 
