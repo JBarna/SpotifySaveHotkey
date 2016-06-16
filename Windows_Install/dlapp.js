@@ -90,7 +90,7 @@ function checkForNewRelease( repoName, next ){
 
                 // download the new release in a zip
                 downloader(data.zipball_url, longFileName => {
-
+                    
                     // unzip it and delete the .zip file after
                     unzip( longFileName );
                     fs.unlinkSync( path.join( __dirname, longFileName) );
@@ -146,7 +146,7 @@ function downloader( downloadUrl, cb ){
         } else if (res.statusCode == 200){
 
             var filename = res.headers["content-disposition"].split("=")[1];
-            var ws = fs.createWriteStream(filename);
+            var ws = fs.createWriteStream( path.join( __dirname, filename));
 
             res.pipe(ws);
 
@@ -163,7 +163,7 @@ function downloader( downloadUrl, cb ){
 function unzip(filename){
 
     if (process.platform === "win32")
-        exec("cscript //B w_unzip.vbs " + filename);
+        exec(["cscript", "//B", path.join(__dirname, "w_unzip.vbs"), path.join( __dirname, filename), __dirname].join(" "));
     
 }
 

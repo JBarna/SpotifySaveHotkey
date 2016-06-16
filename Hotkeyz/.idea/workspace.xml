@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/TrayIconManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotkey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/AudioAlert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Connection.java" />
       </list>
     </option>
   </component>
