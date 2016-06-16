@@ -12,7 +12,7 @@ I love to listen to new music, and I love to listen to music *while I'm busy doi
 * [Mac Installer](https://github.com/JBarna/SpotifySaveHotkey/wiki/Mac-Installation)
 
 ### How it works
-Once isntalled you should see a checkmark in your task tray, then you can 
+Once installed you should see a checkmark in your task tray, then you can 
 * `hover over` - the icon to see what current hotkey is set
 * `right click` - the icon to access options and change the hotkey
 
