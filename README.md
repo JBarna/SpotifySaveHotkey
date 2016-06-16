@@ -8,7 +8,7 @@ I love to listen to new music, and I love to listen to music *while I'm busy doi
 
 ### What are we going to do??
 ***Install SpotifySaveHotkey!***
-* [Windows Installer](https://github.com/JBarna/SpotifySaveHotkey/releases/download/v1.0/SpotifySaveHotkey_WindowsInstaller.EXE)
+* [Windows Installer](https://github.com/JBarna/SpotifySaveHotkey/releases/download/v1.0/SpotifySaveHotkey_WindowsInstaller.EXE) (You may have to click `more info` and then `run anyway`)
 * [Mac Installer](https://github.com/JBarna/SpotifySaveHotkey/wiki/Mac-Installation)
 
 ### How it works
