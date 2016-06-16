@@ -78,7 +78,7 @@ echo Downloading SpotifySaveHotkey
 echo ______________________________________
 echo.
 
-REM start /MIN /WAIT "" node entry.js install
+start /MIN /WAIT "" node entry.js install
 
 echo ______________________________________
 echo.

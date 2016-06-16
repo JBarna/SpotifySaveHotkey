@@ -28,6 +28,16 @@ module.exports = cb => {
             var startupManager = require("./SpotifySaveHotkey/lib/startup_manager");
             startupManager.setState(true);
 
+            
+            // Lets change the hotkey.txt back to regular line endings on windows...
+            if (process.platform === "win32"){
+                
+                var hotkey = fs.readFileSync( path.join( __dirname, "SpotifySaveHotkey", "hotkey.txt"), 'utf8');
+                hotkey = hotkey.replace( /\n/g, "\r\n");
+                fs.writeFileSync( path.join( __dirname, "SpotifySaveHotkey", "hotkey.txt"), hotkey);
+                
+            }
+            
             cb();
                 
         };
