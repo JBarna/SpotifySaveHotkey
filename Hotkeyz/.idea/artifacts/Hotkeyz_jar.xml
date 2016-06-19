@@ -3,10 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Hotkeyz_jar</output-path>
     <root id="archive" name="Hotkeyz.jar">
       <element id="module-output" name="Hotkeyz" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/tulskiy/jkeymaster/1.2/jkeymaster-1.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-jdk14/1.7.13/slf4j-jdk14-1.7.13.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/1stleg/jnativehook/2.0.2/jnativehook-2.0.2.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

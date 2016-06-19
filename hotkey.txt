@@ -1,18 +1,117 @@
-alt pressed F7
+alt f7
 
 Hello!
 This is the file where you specify what key you want to press to save that dope song you're listening to
 
-Our default hotkey is above...
-Note that the 'F' is capitalized
+Our default hotkey is above and should be on the first line.
 
 If you change this, then you need to restart the program for changes to take place
 
 To check that your custom hotkey works, hover over the checkmark icon in your task tray
 And if it failed it will say "OMFG ERROR"
 
-It's very important that it follows a specific format!
-Please visit https://docs.oracle.com/javase/8/docs/api/javax/swing/KeyStroke.html#getKeyStroke-java.lang.String-
-to get more information 
+You can have as many "modifiers" as you want but you can only have 1 key
+Example: 
+This is okay: alt shift ctrl f7
+This is not okay: alt f7 f8
 
+All possible modifiers: alt shift ctrl
+All possible keys:
 
+Escape
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+Minus
+Equals
+Backspace
+Tab
+Q
+W
+E
+R
+T
+Y
+U
+I
+O
+P
+Open Bracket
+Close Bracket
+Enter
+Left Control
+A
+S
+D
+F
+G
+H
+J
+K
+L
+Semicolon
+Quote
+Back Quote
+Left Shift
+Back Slash
+Z
+X
+C
+V
+B
+N
+M
+Comma
+Period
+Slash
+Right Shift
+NumPad Multiply
+Left Alt
+Space
+Caps Lock
+F1
+F2
+F3
+F4
+F5
+F6
+F7
+F8
+F9
+F10
+Num Lock
+Scroll Lock
+NumPad 7
+NumPad 8
+NumPad 9
+NumPad Subtract
+NumPad 4
+NumPad 5
+NumPad 6
+NumPad Add
+NumPad 1
+NumPad 2
+NumPad 3
+NumPad 0
+NumPad Separator
+F11
+F12
+F13
+F14
+F15
+F16
+F17
+F18
+F19
+F20
+F21
+F22
+F23
+F24

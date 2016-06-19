@@ -88,9 +88,7 @@ public class Connection implements Runnable{
 
                     TrayIconManager.getInstance().setStartupState(boolval);
 
-
                 }
-
             }
         }
     }

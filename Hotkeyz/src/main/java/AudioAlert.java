@@ -1,7 +1,5 @@
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
-
-import javax.sound.sampled.AudioInputStream;
 import java.io.IOException;
 
 /**
